@@ -1,0 +1,42 @@
+#include<stdio.h>
+//void rev(char str[],char name[],int i,int n)
+//{
+//    if(i>=n)
+//    {
+//        str[i]='\0';
+//    }
+//    else
+//    {
+//        str[i]=name[n-i-1];
+//        rev(str,name,i+1,n);
+//    }
+//
+//}
+//int main()
+//{
+//    char *str;
+//    char name[10]="yaswanth";
+//    str=malloc(10*sizeof(char));
+//    int n=strlen(name);
+//    rev(str,name,0,n);
+//    printf("the reversed string :%s\n",str);
+//}
+
+#include<stdio.h>
+void rev(char str[],char name[],int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        str[i]=name[n-i-1];
+    }str[n]='\0';
+}
+
+int main()
+{
+    char *str;
+    char name[10]="yaswanth";
+    str=malloc(10*sizeof(char));
+    int n=strlen(name);
+    rev(str,name,n);
+    printf("the reversed string :%s\n",str);
+}
