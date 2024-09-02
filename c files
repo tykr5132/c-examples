@@ -1,0 +1,173 @@
+/*#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+        FILE *ptr;
+        int  ch;
+        ptr=fopen("myfile","w");
+        if(ptr==NULL)
+        {
+                printf("failed to open the file\n");
+                exit(0);
+        }
+        while((ch=getchar())!=EOF)
+        {
+                fputc(ch,ptr);
+        }fclose(ptr);
+}*/
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//        FILE *ptr;
+//        int ch;
+//        ptr=fopen("tofile","r");
+//        if(ptr==NULL)
+//        {
+//                printf("error in creating\n");
+//                exit(0);
+//        }
+//        while((ch=fgetc(ptr))!=EOF)
+//        {
+//                printf("%c",ch);
+//        }
+//        fclose(ptr);
+//}
+
+
+
+
+
+
+//#include<stdio.h>
+//#include<stdio.h>
+//int main()
+//{
+//
+//    FILE *ptr;
+//    FILE *p;
+//    int ch;
+//    ptr=fopen("myfile","r");
+//    if(ptr==NULL)
+//    {
+//        printf("cant open it\n");
+//        exit(0);
+//    }
+//    p=fopen("tofile","w");
+//    if(p==NULL)
+//    {
+//        printf("cant open a file\n");
+//        exit(0);
+//    }
+//    while((ch=fgetc(ptr))!=EOF)
+//    {
+//        fputc(ch,p);
+//    }
+//    fclose(ptr);
+//    fclose(p);
+//
+//}
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//        FILE *ptr;
+//        char str[100];
+//        int ch;
+//        ptr=fopen("tofile","w");
+//        if(ptr==NULL)
+//        {
+//                printf("error in creating\n");
+//                exit(0);
+//        }
+//        while(gets(str)!=NULL)
+//        {
+//            fputs(str,ptr);
+//        }
+//        fclose(ptr);
+//}
+
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//    FILE *ptr;
+//    int ch;
+//    ptr=fopen("tofile","r");
+//    while((ch=fgetc(ptr))!=EOF)
+//    {
+//        printf("%c",ch);
+//    }
+//    fclose(ptr);
+//}
+//
+//
+//
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//    FILE *ptr;
+//    char str[100];
+//    int ch;
+//    ptr=fopen("tofile","w");
+//    if(ptr==NULL)
+//    {
+//        printf("cant open the file\n");
+//        exit(0);
+//    }
+//    while((gets(str))!=EOF)
+//    {
+//        strcat(str,"\n");
+//        fputs(str,ptr);
+//    }
+//    fclose(ptr);
+//}
+
+//#include<stdio.h>>
+//#include<stdlib.h>>
+//int main()
+//{
+//    FILE *ptr;
+//    int ch;
+//    ptr=fopen("tofile","r");
+//    while((ch=fgetc(ptr))!=EOF)
+//    {
+//        printf("%c",ch);
+//    }
+//    fclose(ptr);
+//}
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//    FILE *ptr;
+//    char str[100];
+//    ptr=fopen("myfile","r");
+//    while(fgets(str,80,ptr)!=NULL)
+//    {
+//        puts(str);
+//    }
+//    fclose(ptr);
+//}
+//
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char c[]="gate2011";
+    char *p=c;
+    printf("%s",p+1);
+}
