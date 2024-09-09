@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,limit,count;
+    printf("Enter the n valude\n");
+    scanf("%d",&n);
+    printf("Enter the limit value\n");
+    scanf("%d",&limit);
+    for(int n=0;n<limit;n++)
+    {
+        count=0;
+        for(int j=2;j<n;j++)
+        {
+            if(n%j==0)
+            {
+                count=1;
+                break;
+            }
+        }
+        if(count==0)
+    {
+        printf("%d ",n);
+    }
+    }
+    
+}
