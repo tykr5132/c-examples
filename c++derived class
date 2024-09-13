@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+class Base {
+public:
+    int a;
+    Base(int x) {  // Base class constructor
+        a = x;
+        cout << a;
+    }
+};
+
+class Intermediate : public Base {
+public:
+    int b;
+    Intermediate(int x, int y) : Base(x) {  // Intermediate class constructor
+        b = y;
+        cout <<b;
+    }
+};
+
+class Derived : public Intermediate {
+public:
+    int c;
+    Derived(int x, int y, int z) : Intermediate(x, y) {  // Derived class constructor
+        c = z;
+        cout<<c;
+    }
+};
+
+int main() {
+    Derived d(1, 2, 3);  // Pass values to the Derived class constructor
+    return 0;
+}
